@@ -1,3 +1,7 @@
 .button {
-
+    @include link-color(#fff, #fff, none, none);
+    background-color: #ed1639;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
 }
