@@ -101,8 +101,6 @@ function sliderInit() {
                 });
 
             }
-        } else {
-            console.log('manji si baki')
         }
     });
 
