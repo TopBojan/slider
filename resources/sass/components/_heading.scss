@@ -1,0 +1,12 @@
+.heading {
+    font-size: 42px;
+    font-weight: $font-weight-regular;
+    line-height: 1.9;
+    margin-bottom: 60px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include breakpoint(sm) {
+        font-size: 28px;
+    }
+}

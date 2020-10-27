@@ -1,17 +1,10 @@
 .slider {
     margin-bottom: 30px;
+    @include flex(flex, row, nowrap, flex-start, flex-start);
+
 
     &-inner {
         @include flex(flex, row, nowrap, flex-start, flex-start);
-    }
-
-    &-title {
-        font-size: 42px;
-        font-weight: $font-weight-regular;
-        line-height: 1.9;
-        margin-bottom: 60px;
-        text-align: center;
-        text-transform: uppercase;
     }
 
     &-item {
@@ -25,6 +18,11 @@
         height: 260px;
         position: relative;
         width: 480px;
+
+        @include breakpoint(sm) {
+            height: 130px;
+            width: 240px;
+        }
 
         &:after {
             background-color: rgba(0,0,0, .7);
